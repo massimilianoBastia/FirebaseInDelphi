@@ -1,0 +1,84 @@
+inherited fmxMain_Macintosh: TfmxMain_Macintosh
+  DesignerMasterStyle = 0
+  inherited TabControl: TTabControl
+    Sizes = (
+      700s
+      431s
+      700s
+      431s
+      700s
+      431s
+      700s
+      431s
+      700s
+      431s)
+    inherited tabSignIn: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+    end
+    inherited tabClipboard: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited btnSendToCloud: TButton
+        Position.X = 560.000000000000000000
+        Size.Width = 112.000000000000000000
+        Size.Height = 25.000000000000000000
+      end
+      inherited lblStatusRTDB: TLabel
+        Size.Width = 489.000000000000000000
+      end
+      inherited TabControlClipboard: TTabControl
+        Size.Height = 240.000000000000000000
+        Sizes = (
+          649s
+          214s
+          649s
+          214s)
+        inherited tabText: TTabItem
+          ExplicitSize.cx = 41.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          inherited memClipboardText: TMemo
+            Size.Height = 214.000000000000000000
+            Viewport.Width = 649.000000000000000000
+            Viewport.Height = 214.000000000000000000
+          end
+        end
+        inherited tabGraphic: TTabItem
+          ExplicitSize.cx = 61.000000000000000000
+          ExplicitSize.cy = 26.000000000000000000
+          inherited imgClipboardPict: TImage
+            Size.Height = 212.000000000000000000
+          end
+        end
+      end
+      inherited lblSendStatusRTDB: TLabel
+        Size.Width = 481.000000000000000000
+      end
+    end
+    inherited tabServer: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Label1: TLabel
+        Position.Y = 88.000000000000000000
+      end
+      inherited memRTDB: TMemo
+        Position.X = -48.000000000000000000
+        Position.Y = 40.000000000000000000
+        Viewport.Width = 361.000000000000000000
+        Viewport.Height = 49.000000000000000000
+      end
+    end
+    inherited tabCreaServer: TTabItem
+      ExplicitSize.cx = 95.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited lstDBNode: TListBox
+        Viewport.Width = 200.000000000000000000
+        Viewport.Height = 200.000000000000000000
+      end
+    end
+    inherited tabContatti: TTabItem
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+  end
+end

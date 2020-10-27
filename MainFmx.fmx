@@ -1,0 +1,678 @@
+object fmxMain: TfmxMain
+  Left = 0
+  Top = 0
+  Caption = 'Super Clipboard'
+  ClientHeight = 491
+  ClientWidth = 700
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object TabControl: TTabControl
+    Align = Client
+    Size.Width = 700.000000000000000000
+    Size.Height = 491.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 2
+    TabOrder = 0
+    TabPosition = None
+    OnChange = TabControlChange
+    Sizes = (
+      700s
+      491s
+      700s
+      491s
+      700s
+      491s
+      700s
+      491s
+      700s
+      491s
+      700s
+      491s)
+    object tabProjectSet: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabProjectSet'
+      object edtKey: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.X = 72.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 489.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object edtProjectID: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 72.000000000000000000
+        Position.Y = 152.000000000000000000
+        Size.Width = 489.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object btnSet: TButton
+        Position.X = 480.000000000000000000
+        Position.Y = 200.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Set'
+        OnClick = btnSetClick
+      end
+      object Label2: TLabel
+        Position.X = 72.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Web Api Key'
+        TabOrder = 3
+      end
+      object Label3: TLabel
+        Position.X = 72.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Project ID'
+        TabOrder = 4
+      end
+    end
+    object tabSignIn: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabSignIn'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object layToolbar: TLayout
+        Align = Top
+        Size.Width = 700.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object lblVersionInfo: TLabel
+          Position.X = 72.000000000000000000
+          Position.Y = 16.000000000000000000
+          Text = 'Version Oct-2019'
+          TabOrder = 0
+        end
+        object btnSettings: TButton
+          Position.X = 16.000000000000000000
+          Position.Y = 2.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'drawertoolbutton'
+          TabOrder = 1
+          Text = 'btnSettings'
+        end
+      end
+      object Layout1: TLayout
+        Position.X = -24.000000000000000000
+        Size.Width = 697.000000000000000000
+        Size.Height = 417.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object Rectangle1: TRectangle
+          Align = Client
+          Fill.Color = claDeepskyblue
+          Size.Width = 697.000000000000000000
+          Size.Height = 417.000000000000000000
+          Size.PlatformDefault = False
+        end
+        inline FraSelfRegistration1: TFraSelfRegistration
+          Align = Client
+          Size.Width = 697.000000000000000000
+          Size.Height = 417.000000000000000000
+          Size.PlatformDefault = False
+          inherited AniIndicator: TAniIndicator
+            Align = Center
+            Margins.Bottom = 250.000000000000000000
+            Size.Width = 100.000000000000000000
+            Size.Height = 100.000000000000000000
+            Size.PlatformDefault = False
+          end
+          inherited btnCheckEMail: TButton
+            Align = Center
+            Default = True
+            Margins.Bottom = 25.000000000000000000
+            Size.Width = 376.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            Text = 'Check Email Address'
+          end
+          inherited btnResetPwd: TButton
+            Align = Center
+            Margins.Top = 125.000000000000000000
+            Size.Width = 377.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 11
+            Text = 'Reset password'
+          end
+          inherited btnSignIn: TButton
+            Align = Center
+            Default = True
+            Margins.Top = 50.000000000000000000
+            Size.Width = 377.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            Text = 'Sign-In'
+          end
+          inherited btnSignUp: TButton
+            Align = Center
+            Default = True
+            Margins.Top = 125.000000000000000000
+            Size.Width = 377.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            Text = 'Sign-Up'
+          end
+          inherited edtEMail: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 0
+            Margins.Bottom = 120.000000000000000000
+            Size.Width = 377.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            inherited txtEMail: TText
+              Position.X = -104.000000000000000000
+              Size.Width = 96.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Email address'
+              TextSettings.HorzAlign = Trailing
+            end
+          end
+          inherited edtPassword: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 1
+            Password = True
+            Margins.Bottom = 30.000000000000000000
+            Size.Width = 377.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            inherited txtPassword: TText
+              Position.X = -104.000000000000000000
+              Size.Width = 96.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Password'
+              TextSettings.HorzAlign = Trailing
+            end
+          end
+          inherited lblStatus: TLabel
+            Align = Center
+            Margins.Top = 200.000000000000000000
+            Size.Width = 500.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = 'lblStatus'
+            TabOrder = 7
+          end
+        end
+      end
+    end
+    object tabClipboard: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabClipboard'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object SaveDialog1: TSaveDialog
+        Left = 80
+        Top = 426
+      end
+      object Layout2: TLayout
+        Align = Client
+        Size.Width = 700.000000000000000000
+        Size.Height = 491.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Rectangle2: TRectangle
+          Fill.Color = claDeepskyblue
+          Size.Width = 700.000000000000000000
+          Size.Height = 499.000000000000000000
+          Size.PlatformDefault = False
+          object ListBox1: TListBox
+            Position.Y = 55.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 444.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            MultiSelectStyle = Extended
+            Viewport.Width = 101.000000000000000000
+            Viewport.Height = 440.000000000000000000
+            object ListBoxItem1: TListBoxItem
+              Locked = True
+              Size.Width = 101.000000000000000000
+              Size.Height = 137.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Lista Gruppi'
+              OnClick = ListBoxItem1Click
+            end
+            object ListBoxItem2: TListBoxItem
+              Position.Y = 137.000000000000000000
+              Size.Width = 101.000000000000000000
+              Size.Height = 176.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Crea Gruppo'
+              OnClick = ListBoxItem2Click
+            end
+            object ListBoxItem3: TListBoxItem
+              Position.Y = 313.000000000000000000
+              Size.Width = 101.000000000000000000
+              Size.Height = 121.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Contatti'
+              OnClick = ListBoxItem3Click
+            end
+          end
+          object btnCancellaGruppo: TButton
+            Position.X = 368.000000000000000000
+            Position.Y = 416.000000000000000000
+            Size.Width = 105.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Cancella Gruppo'
+            OnClick = btnCancellaGruppoClick
+          end
+          object btnSendToCloud: TButton
+            Anchors = [akRight, akBottom]
+            Position.X = 476.000000000000000000
+            Position.Y = 417.000000000000000000
+            Size.Width = 104.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Send to Cloud'
+            OnClick = btnSendToCloudClick
+          end
+          object btnUploadSynch: TButton
+            Position.X = 584.000000000000000000
+            Position.Y = 416.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Upload File'
+            OnClick = btnUploadSynchClick
+          end
+          object edtStoragePath: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 4
+            Position.X = 216.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 449.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Enter the path including path separator /'
+          end
+          object layUserInfo: TLayout
+            Align = Top
+            Size.Width = 700.000000000000000000
+            Size.Height = 55.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            object btnSignOut: TButton
+              Margins.Left = 10.000000000000000000
+              Margins.Top = 15.000000000000000000
+              Margins.Bottom = 15.000000000000000000
+              Position.Y = 24.000000000000000000
+              Size.Width = 105.000000000000000000
+              Size.Height = 33.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Sign Out'
+              OnClick = btnSignOutClick
+            end
+          end
+          object lblClipboardState: TLabel
+            Position.X = 160.000000000000000000
+            Position.Y = 57.000000000000000000
+            Text = 'Clipboard Content:'
+            TabOrder = 6
+          end
+          object lblSendStatusRTDB: TLabel
+            Anchors = [akLeft, akRight, akBottom]
+            Position.X = 104.000000000000000000
+            Position.Y = 469.000000000000000000
+            Size.Width = 1219.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            TabOrder = 7
+          end
+          object lblStatusRTDB: TLabel
+            Anchors = [akLeft, akRight, akBottom]
+            Position.X = 104.000000000000000000
+            Position.Y = 465.000000000000000000
+            Size.Width = 1339.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            TabOrder = 8
+          end
+          object lblUserInfo: TLabel
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 20.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 200.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 401.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Trailing
+            TabOrder = 9
+          end
+          object TabControl1: TTabControl
+            Position.X = 160.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 505.000000000000000000
+            Size.Height = 329.000000000000000000
+            Size.PlatformDefault = False
+            TabIndex = 0
+            TabOrder = 10
+            TabPosition = PlatformDefault
+            Sizes = (
+              505s
+              303s)
+            object tabLobby: TTabItem
+              CustomIcon = <
+                item
+                end>
+              IsSelected = True
+              Size.Width = 53.000000000000000000
+              Size.Height = 26.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = ''
+              TabOrder = 0
+              Text = 'Lobby'
+              ExplicitSize.cx = 53.000000000000000000
+              ExplicitSize.cy = 26.000000000000000000
+              object Layout3: TLayout
+                Align = Client
+                Size.Width = 505.000000000000000000
+                Size.Height = 303.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+              end
+              object memClipboardText: TMemo
+                Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+                DataDetectorTypes = []
+                StyledSettings = [Size, Style, FontColor]
+                TextSettings.Font.Family = 'Courier New'
+                Position.Y = 273.000000000000000000
+                Size.Width = 505.000000000000000000
+                Size.Height = 30.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 1
+                Viewport.Width = 501.000000000000000000
+                Viewport.Height = 26.000000000000000000
+              end
+              object ListBox2: TListBox
+                Size.Width = 505.000000000000000000
+                Size.Height = 273.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                OnDblClick = ListBox2DblClick
+                DisableFocusEffect = True
+                DefaultItemStyles.ItemStyle = ''
+                DefaultItemStyles.GroupHeaderStyle = ''
+                DefaultItemStyles.GroupFooterStyle = ''
+                Viewport.Width = 501.000000000000000000
+                Viewport.Height = 269.000000000000000000
+                object StyleBook1: TStyleBook
+                  Styles = <
+                    item
+                    end>
+                  Left = 136
+                  Top = 424
+                end
+              end
+            end
+          end
+        end
+        object lblUpload: TLabel
+          Position.X = 400.000000000000000000
+          Position.Y = 448.000000000000000000
+          Size.Width = 281.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+      end
+    end
+    object tabServer: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'ServerTab'
+      ExplicitSize.cx = 72.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Label1: TLabel
+        Position.X = 360.000000000000000000
+        Size.Width = 265.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+      end
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemDeleteAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Position.X = 16.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 689.000000000000000000
+        Size.Height = 593.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnItemClick = OnItemClick
+      end
+      object btnCreaServer: TButton
+        Position.X = 312.000000000000000000
+        Position.Y = 31.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'CreaServer'
+        OnClick = btnCreaServerClick
+      end
+      object btnBackGruppoList: TButton
+        Position.X = 8.000000000000000000
+        StyleLookup = 'backtoolbutton'
+        TabOrder = 0
+        Text = 'Back'
+        Visible = False
+        OnClick = btnBackGruppoListClick
+      end
+      object memRTDB: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 32.000000000000000000
+        Position.Y = 31.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Viewport.Width = 245.000000000000000000
+        Viewport.Height = 22.000000000000000000
+      end
+      object lblcurrentselection: TLabel
+        Position.X = 504.000000000000000000
+        Position.Y = 39.000000000000000000
+        Text = 'lblcurrentselection'
+        TabOrder = 5
+      end
+    end
+    object tabCreaServer: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabCreaServer'
+      ExplicitSize.cx = 95.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Layout4: TLayout
+        Align = Client
+        Size.Width = 700.000000000000000000
+        Size.Height = 491.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle3: TRectangle
+          Align = Client
+          Fill.Color = claDeepskyblue
+          Size.Width = 700.000000000000000000
+          Size.Height = 491.000000000000000000
+          Size.PlatformDefault = False
+          object btnBackCreaGruppo: TButton
+            Align = Top
+            StyleLookup = 'backtoolbutton'
+            TabOrder = 0
+            Text = 'Back'
+            Visible = False
+            OnClick = btnBackGruppoListClick
+          end
+          object btnUploadServer: TButton
+            Position.X = 320.000000000000000000
+            Position.Y = 72.000000000000000000
+            Size.Width = 89.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'UploadServer'
+            OnClick = btnUploadServerClick
+          end
+          object edtNomeServer: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 2
+            Position.X = 72.000000000000000000
+            Position.Y = 73.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TextPrompt = 'Cloudy'
+          end
+          object lstDBNode: TListBox
+            Position.X = 72.000000000000000000
+            Position.Y = 143.000000000000000000
+            Size.Width = 241.000000000000000000
+            Size.Height = 218.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            Viewport.Width = 237.000000000000000000
+            Viewport.Height = 214.000000000000000000
+          end
+        end
+      end
+    end
+    object tabContatti: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tabContatti'
+      ExplicitSize.cx = 80.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object btnBackContatti: TButton
+        Position.X = 24.000000000000000000
+        Position.Y = 16.000000000000000000
+        StyleLookup = 'backtoolbutton'
+        TabOrder = 0
+        Text = 'Back'
+        Visible = False
+        OnClick = btnBackGruppoListClick
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 24.000000000000000000
+        Position.Y = 47.000000000000000000
+        Size.Width = 593.000000000000000000
+        Size.Height = 314.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 589.000000000000000000
+        Viewport.Height = 310.000000000000000000
+      end
+    end
+  end
+  object OpenDialog: TOpenDialog
+    Left = 192
+    Top = 424
+  end
+  object ActionList1: TActionList
+    Left = 256
+    Top = 425
+    object PreviousTabAction1: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabClipboard
+    end
+  end
+end
