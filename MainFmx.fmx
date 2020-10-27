@@ -17,7 +17,7 @@ object fmxMain: TfmxMain
     Size.Height = 491.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
-    TabIndex = 2
+    TabIndex = 3
     TabOrder = 0
     TabPosition = None
     OnChange = TabControlChange
@@ -167,7 +167,7 @@ object fmxMain: TfmxMain
       CustomIcon = <
         item
         end>
-      IsSelected = True
+      IsSelected = False
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -414,7 +414,7 @@ object fmxMain: TfmxMain
       CustomIcon = <
         item
         end>
-      IsSelected = False
+      IsSelected = True
       Size.Width = 8.000000000000000000
       Size.Height = 8.000000000000000000
       Size.PlatformDefault = False
@@ -443,15 +443,15 @@ object fmxMain: TfmxMain
         TabOrder = 2
         OnItemClick = OnItemClick
       end
-      object btnCreaServer: TButton
+      object btnCreateGroup: TButton
         Position.X = 312.000000000000000000
         Position.Y = 31.000000000000000000
         Size.Width = 129.000000000000000000
         Size.Height = 26.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 3
-        Text = 'CreaServer'
-        OnClick = btnCreaServerClick
+        Text = 'Create Group'
+        OnClick = btnCreateGroupClick
       end
       object btnBackGruppoList: TButton
         Position.X = 8.000000000000000000
@@ -513,15 +513,15 @@ object fmxMain: TfmxMain
             Visible = False
             OnClick = btnBackGruppoListClick
           end
-          object btnUploadServer: TButton
+          object btnUploadGroup: TButton
             Position.X = 320.000000000000000000
             Position.Y = 72.000000000000000000
             Size.Width = 89.000000000000000000
             Size.Height = 26.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 1
-            Text = 'UploadServer'
-            OnClick = btnUploadServerClick
+            Text = 'UploadGroup'
+            OnClick = btnUploadGroupClick
           end
           object edtNomeServer: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]

@@ -35,9 +35,9 @@ type
     Label1: TLabel;
     ListView1: TListView;
     btnDeleteGroup: TButton;
-    btnCreaServer: TButton;
+    btnCreateGroup: TButton;
     tabCreaServer: TTabItem;
-    btnUploadServer: TButton;
+    btnUploadGroup: TButton;
     edtNomeServer: TEdit;
     lstDBNode: TListBox;
     tabContatti: TTabItem;
@@ -83,8 +83,8 @@ type
     procedure btnSignOutClick(Sender: TObject);
     procedure OnItemClick(const Sender: TObject; const AItem: TListViewItem);
     procedure btnDeleteGroupClick(Sender: TObject);
-    procedure btnCreaServerClick(Sender: TObject);
-    procedure btnUploadServerClick(Sender: TObject);
+    procedure btnCreateGroupClick(Sender: TObject);
+    procedure btnUploadGroupClick(Sender: TObject);
     procedure btnUploadSynchClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure ListBoxItem1Click(Sender: TObject);
@@ -711,13 +711,13 @@ end;
   end;
 end;
 
-procedure TfmxMain.btnCreaServerClick(Sender: TObject);
+procedure TfmxMain.btnCreateGroupClick(Sender: TObject);
 begin
     WipeToTab(tabCreaServer);
 end;
 {$ENDREGION}
 {$REGION 'CreaServer'}
-procedure TfmxMain.btnUploadServerClick(Sender: TObject);
+procedure TfmxMain.btnUploadGroupClick(Sender: TObject);
 var
   Data: TJSONObject;
   Val: TJSONValue;
