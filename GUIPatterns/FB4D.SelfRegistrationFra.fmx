@@ -64,6 +64,7 @@ object FraSelfRegistration: TFraSelfRegistration
     OnChangeTracking = edtEMailChangeTracking
     object txtEMail: TText
       Position.X = -104.000000000000000000
+      Position.Y = -8.000000000000000000
       Size.Width = 96.000000000000000000
       Size.Height = 25.000000000000000000
       Size.PlatformDefault = False
