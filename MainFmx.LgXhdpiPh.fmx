@@ -1,0 +1,149 @@
+inherited fmxMain_LgXhdpiPh: TfmxMain_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited TabControl: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    Sizes = (
+      450s
+      695s
+      450s
+      695s
+      450s
+      695s
+      450s
+      695s
+      450s
+      695s
+      450s
+      695s)
+    inherited tabProjectSet: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited edtKey: TEdit
+        Size.Height = 32.000000000000000000
+      end
+      inherited edtProjectID: TEdit
+        Size.Height = 32.000000000000000000
+      end
+    end
+    inherited tabSignIn: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited layToolbar: TLayout
+        Size.Width = 450.000000000000000000
+        inherited lblVersionInfo: TLabel
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 161.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.VertAlign = Leading
+        end
+      end
+      inherited Layout1: TLayout
+        Position.Y = -8.000000000000000000
+        inherited Rectangle1: TRectangle
+          Fill.Kind = Resource
+        end
+      end
+    end
+    inherited tabClipboard: TTabItem
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited Layout2: TLayout
+        Size.Width = 450.000000000000000000
+        Size.Height = 695.000000000000000000
+        inherited Rectangle2: TRectangle
+          Position.Y = 102.000000000000000000
+          inherited ListBox1: TListBox
+            Viewport.Width = 105.000000000000000000
+            Viewport.Height = 444.000000000000000000
+            inherited ListBoxItem1: TListBoxItem
+              Size.Width = 105.000000000000000000
+            end
+            inherited ListBoxItem2: TListBoxItem
+              Size.Width = 105.000000000000000000
+            end
+            inherited ListBoxItem3: TListBoxItem
+              Size.Width = 105.000000000000000000
+            end
+          end
+          inherited edtStoragePath: TEdit
+            Size.Height = 32.000000000000000000
+          end
+          inherited layUserInfo: TLayout
+            inherited btnSignOut: TButton
+              Position.X = -8.000000000000000000
+            end
+          end
+          inherited TabControl1: TTabControl
+            TabHeight = 49.000000000000000000
+            Sizes = (
+              505s
+              280s)
+            inherited tabLobby: TTabItem
+              Size.Width = 46.000000000000000000
+              Size.Height = 49.000000000000000000
+              ExplicitSize.cx = 53.000000000000000000
+              ExplicitSize.cy = 26.000000000000000000
+              inherited Layout3: TLayout
+                Size.Height = 280.000000000000000000
+              end
+              inherited memClipboardText: TMemo
+                Viewport.Width = 505.000000000000000000
+                Viewport.Height = 30.000000000000000000
+              end
+              inherited ListBox2: TListBox
+                Viewport.Width = 505.000000000000000000
+                Viewport.Height = 273.000000000000000000
+              end
+            end
+          end
+        end
+      end
+    end
+    inherited tabServer: TTabItem
+      ExplicitSize.cx = 150.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Label1: TLabel
+        Position.Y = 88.000000000000000000
+      end
+      inherited btnBackGruppoList: TButton
+        OnClick = nil
+      end
+      inherited memRTDB: TMemo
+        Viewport.Width = 249.000000000000000000
+        Viewport.Height = 26.000000000000000000
+      end
+    end
+    inherited tabCreaServer: TTabItem
+      ExplicitSize.cx = 95.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Layout4: TLayout
+        Size.Width = 450.000000000000000000
+        Size.Height = 695.000000000000000000
+        inherited Rectangle3: TRectangle
+          Size.Width = 450.000000000000000000
+          Size.Height = 695.000000000000000000
+          inherited edtNomeServer: TEdit
+            Size.Height = 32.000000000000000000
+          end
+          inherited lstDBNode: TListBox
+            Viewport.Width = 241.000000000000000000
+            Viewport.Height = 218.000000000000000000
+          end
+        end
+      end
+    end
+    inherited tabContatti: TTabItem
+      ExplicitSize.cx = 90.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Memo1: TMemo
+        Viewport.Width = 593.000000000000000000
+        Viewport.Height = 314.000000000000000000
+      end
+    end
+  end
+end
