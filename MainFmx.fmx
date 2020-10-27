@@ -45,6 +45,8 @@ object fmxMain: TfmxMain
       StyleLookup = ''
       TabOrder = 0
       Text = 'tabProjectSet'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
       object edtKey: TEdit
         Touch.InteractiveGestures = [LongTap, DoubleTap]
         TabOrder = 0
@@ -146,96 +148,17 @@ object fmxMain: TfmxMain
           Size.Width = 697.000000000000000000
           Size.Height = 417.000000000000000000
           Size.PlatformDefault = False
-          inherited AniIndicator: TAniIndicator
-            Align = Center
-            Margins.Bottom = 250.000000000000000000
-            Size.Width = 100.000000000000000000
-            Size.Height = 100.000000000000000000
-            Size.PlatformDefault = False
-          end
           inherited btnCheckEMail: TButton
-            Align = Center
-            Default = True
-            Margins.Bottom = 25.000000000000000000
-            Size.Width = 376.000000000000000000
-            Size.Height = 25.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 6
-            Text = 'Check Email Address'
+            TabOrder = 5
           end
           inherited btnResetPwd: TButton
-            Align = Center
-            Margins.Top = 125.000000000000000000
-            Size.Width = 377.000000000000000000
-            Size.Height = 25.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 11
-            Text = 'Reset password'
+            TabOrder = 9
           end
           inherited btnSignIn: TButton
-            Align = Center
-            Default = True
-            Margins.Top = 50.000000000000000000
-            Size.Width = 377.000000000000000000
-            Size.Height = 25.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 8
-            Text = 'Sign-In'
+            TabOrder = 6
           end
           inherited btnSignUp: TButton
-            Align = Center
-            Default = True
-            Margins.Top = 125.000000000000000000
-            Size.Width = 377.000000000000000000
-            Size.Height = 25.000000000000000000
-            Size.PlatformDefault = False
-            TabOrder = 9
-            Text = 'Sign-Up'
-          end
-          inherited edtEMail: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Center
-            TabOrder = 0
-            Margins.Bottom = 120.000000000000000000
-            Size.Width = 377.000000000000000000
-            Size.Height = 32.000000000000000000
-            Size.PlatformDefault = False
-            inherited txtEMail: TText
-              Position.X = -104.000000000000000000
-              Size.Width = 96.000000000000000000
-              Size.Height = 25.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Email address'
-              TextSettings.HorzAlign = Trailing
-            end
-          end
-          inherited edtPassword: TEdit
-            Touch.InteractiveGestures = [LongTap, DoubleTap]
-            Align = Center
-            TabOrder = 1
-            Password = True
-            Margins.Bottom = 30.000000000000000000
-            Size.Width = 377.000000000000000000
-            Size.Height = 32.000000000000000000
-            Size.PlatformDefault = False
-            inherited txtPassword: TText
-              Position.X = -104.000000000000000000
-              Size.Width = 96.000000000000000000
-              Size.Height = 25.000000000000000000
-              Size.PlatformDefault = False
-              Text = 'Password'
-              TextSettings.HorzAlign = Trailing
-            end
-          end
-          inherited lblStatus: TLabel
-            Align = Center
-            Margins.Top = 200.000000000000000000
-            Size.Width = 500.000000000000000000
-            Size.Height = 25.000000000000000000
-            Size.PlatformDefault = False
-            TextSettings.HorzAlign = Center
-            Text = 'lblStatus'
-            TabOrder = 7
+            TabOrder = 8
           end
         end
       end
@@ -287,7 +210,7 @@ object fmxMain: TfmxMain
               Size.Height = 137.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 0
-              Text = 'Lista Gruppi'
+              Text = 'Groups List'
               OnClick = ListBoxItem1Click
             end
             object ListBoxItem2: TListBoxItem
@@ -296,7 +219,7 @@ object fmxMain: TfmxMain
               Size.Height = 176.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 1
-              Text = 'Crea Gruppo'
+              Text = 'Create Group'
               OnClick = ListBoxItem2Click
             end
             object ListBoxItem3: TListBoxItem
@@ -305,19 +228,19 @@ object fmxMain: TfmxMain
               Size.Height = 121.000000000000000000
               Size.PlatformDefault = False
               TabOrder = 2
-              Text = 'Contatti'
+              Text = 'Contacts'
               OnClick = ListBoxItem3Click
             end
           end
-          object btnCancellaGruppo: TButton
+          object btnDeleteGroup: TButton
             Position.X = 368.000000000000000000
             Position.Y = 416.000000000000000000
             Size.Width = 105.000000000000000000
             Size.Height = 25.000000000000000000
             Size.PlatformDefault = False
             TabOrder = 1
-            Text = 'Cancella Gruppo'
-            OnClick = btnCancellaGruppoClick
+            Text = 'Delete Group'
+            OnClick = btnDeleteGroupClick
           end
           object btnSendToCloud: TButton
             Anchors = [akRight, akBottom]

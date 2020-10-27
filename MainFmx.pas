@@ -34,7 +34,7 @@ type
     tabServer: TTabItem;
     Label1: TLabel;
     ListView1: TListView;
-    btnCancellaGruppo: TButton;
+    btnDeleteGroup: TButton;
     btnCreaServer: TButton;
     tabCreaServer: TTabItem;
     btnUploadServer: TButton;
@@ -82,7 +82,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure btnSignOutClick(Sender: TObject);
     procedure OnItemClick(const Sender: TObject; const AItem: TListViewItem);
-    procedure btnCancellaGruppoClick(Sender: TObject);
+    procedure btnDeleteGroupClick(Sender: TObject);
     procedure btnCreaServerClick(Sender: TObject);
     procedure btnUploadServerClick(Sender: TObject);
     procedure btnUploadSynchClick(Sender: TObject);
@@ -388,7 +388,7 @@ begin
   StartListener('Cloudy');
 end;
 
-procedure TfmxMain.btnCancellaGruppoClick(Sender: TObject);
+procedure TfmxMain.btnDeleteGroupClick(Sender: TObject);
 begin
     if not CheckAndCreateRealTimeDBClass then
     exit;
